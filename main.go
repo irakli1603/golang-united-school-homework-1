@@ -7,9 +7,14 @@ import (
 )
 
 func main() {
+	fmt.Print(getMessage())
+}
+
+func getMessage() string {
 	word := "Hello "
 	mapEmoji := ":world_map:"
 	exclemationChar := "!"
 	message := emoji.Sprint(word, mapEmoji, exclemationChar)
-	fmt.Print(message)
+
+	return message
 }
