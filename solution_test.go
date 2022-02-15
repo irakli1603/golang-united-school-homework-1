@@ -11,7 +11,7 @@ import (
 func TestMessage(t *testing.T) {
 	expectedOutput := emoji.Sprint("Hello :world_map:!")
 
-	actual := getMessage()
+	actual := GetMessage()
 
 	if actual != expectedOutput {
 		errorMsg := fmt.Sprint("expected output to be - ", expectedOutput, " - but instead got - ", actual)
